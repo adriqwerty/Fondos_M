@@ -524,7 +524,7 @@ elif opcion_seleccionada == "Total de la Inversión":
         }) \
         .set_properties(**{'text-align': 'center', 'font-weight': 'bold'})
 
-    altura_tabla = 37* len(resumen_total) + 30
+    altura_tabla = 37* len(resumen_total) + 27
     # Mostrar la tabla
     st.dataframe(styled_resumen, use_container_width=True, hide_index=True,height=altura_tabla )
     fig_rendimiento = px.bar(resumen_total,
